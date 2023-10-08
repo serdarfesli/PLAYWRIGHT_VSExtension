@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Oct 08 03:30:09 EET 2023","Sun Oct 08 03:30:12 EET 2023","3198","chromium","test-1.spec.ts","","","","test",""
+"passed","Sun Oct 08 03:30:04 EET 2023","Sun Oct 08 03:30:09 EET 2023","4910","chromium","Locators.spec.js","","","","Locators",""
+"passed","Sun Oct 08 03:29:55 EET 2023","Sun Oct 08 03:30:01 EET 2023","6434","chromium","example.spec.js","","","","get started link",""
+"passed","Sun Oct 08 03:29:55 EET 2023","Sun Oct 08 03:30:00 EET 2023","5435","chromium","example.spec.js","","","","has title",""
+"failed","Sun Oct 08 03:30:12 EET 2023","Sun Oct 08 03:30:34 EET 2023","22021","chromium","test-2.spec.ts","","","","test",""
+"passed","Sun Oct 08 03:30:01 EET 2023","Sun Oct 08 03:30:04 EET 2023","2392","chromium","LocateMultipleElements.spec.js","","","","locate multiple elements",""
+"failed","Sun Oct 08 03:30:00 EET 2023","Sun Oct 08 03:30:09 EET 2023","8724","chromium","HomePage.spec.js","","","","Home Page",""
