@@ -10,6 +10,9 @@ test('Locators', async ({ page }) => {
 
     const logout = page.locator("#logout2")
     await expect(logout).toBeVisible()
+
+        
+    
     await page.close()
 
 })
