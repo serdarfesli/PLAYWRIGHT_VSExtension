@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -90,86 +90,14 @@
   },
   "suites": [
     {
-      "title": "example.spec.js",
-      "file": "example.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 2793,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-10-08T00:29:55.342Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
-          "file": "example.spec.js",
-          "line": 4,
-          "column": 1
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 3898,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-10-08T00:29:55.345Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
-          "file": "example.spec.js",
-          "line": 11,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "HomePage.spec.js",
-      "file": "HomePage.spec.js",
+      "title": "HomePage.spec.ts",
+      "file": "HomePage.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
           "title": "Home Page",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -181,277 +109,23 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 7515,
-                  "error": {
-                    "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"STORE\u001b[7ma\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"STORE\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"STORE\u001b[7ma\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"STORE\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\n    at c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\HomePage.spec.js:10:24",
-                    "location": {
-                      "file": "c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\HomePage.spec.js",
-                      "column": 24,
-                      "line": 10
-                    },
-                    "snippet": "   8 |     const expectedPageURL = \"https://www.demoblaze.com/\"\n   9 |\n> 10 |     await expect(page).toHaveTitle(expectedPageTitle)\n     |                        ^\n  11 |     await expect(page).toHaveURL(expectedPageURL)\n  12 |\n  13 |     page.close()"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\HomePage.spec.js",
-                        "column": 24,
-                        "line": 10
-                      },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"STORE\u001b[7ma\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"STORE\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveTitle with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\u001b[2m  -   locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"STORE\"\u001b[22m\n\n\n   8 |     const expectedPageURL = \"https://www.demoblaze.com/\"\n   9 |\n> 10 |     await expect(page).toHaveTitle(expectedPageTitle)\n     |                        ^\n  11 |     await expect(page).toHaveURL(expectedPageURL)\n  12 |\n  13 |     page.close()\n\n\u001b[2m    at c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\HomePage.spec.js:10:24\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 3077,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-10-08T00:30:00.797Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\HomePage.spec.js",
-                    "column": 24,
-                    "line": 10
-                  }
+                  "startTime": "2023-10-10T15:15:06.760Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "85163291bc145e3cce73-a5419ea4b91e1c92ef28",
-          "file": "HomePage.spec.js",
+          "id": "62a0194cb94d3eec4948-d6755a0522f550a0453c",
+          "file": "HomePage.spec.ts",
           "line": 4,
           "column": 1
-        }
-      ]
-    },
-    {
-      "title": "LocateMultipleElements.spec.js",
-      "file": "LocateMultipleElements.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "locate multiple elements",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 2385,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\n      PRODUCT STORE\n"
-                    },
-                    {
-                      "text": "Home (current)\n"
-                    },
-                    {
-                      "text": "Contact\n"
-                    },
-                    {
-                      "text": "About us\n"
-                    },
-                    {
-                      "text": "Cart\n"
-                    },
-                    {
-                      "text": "Log in\n"
-                    },
-                    {
-                      "text": "Log out\n"
-                    },
-                    {
-                      "text": "\n"
-                    },
-                    {
-                      "text": "Sign up\n"
-                    },
-                    {
-                      "text": "\n          \n          Previous\n        \n"
-                    },
-                    {
-                      "text": "\n          \n          Next\n        \n"
-                    },
-                    {
-                      "text": "CATEGORIES\n"
-                    },
-                    {
-                      "text": "Phones\n"
-                    },
-                    {
-                      "text": "Laptops\n"
-                    },
-                    {
-                      "text": "Monitors\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-10-08T00:30:01.794Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "091cdfbde34989f6af5f-e3368bac9d66e5d2697d",
-          "file": "LocateMultipleElements.spec.js",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "Locators.spec.js",
-      "file": "Locators.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Locators",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 4903,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-10-08T00:30:04.196Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3d5e83d96c57501bba7f-cdf2a5ec64173f11bb14",
-          "file": "Locators.spec.js",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "test-1.spec.ts",
-      "file": "test-1.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 3197,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-10-08T00:30:09.119Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "492d4a3e7e76c4aacf4a-34ab2a399aed0b8eb826",
-          "file": "test-1.spec.ts",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "test-2.spec.ts",
-      "file": "test-2.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "test",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "failed",
-                  "duration": 19693,
-                  "error": {
-                    "message": "page.waitForSelector: Unsupported token \"{\" while parsing selector \"getByRole('heading', { name: 'Volkswagen PreOFS' }\"",
-                    "stack": "Error: page.waitForSelector: Unsupported token \"{\" while parsing selector \"getByRole('heading', { name: 'Volkswagen PreOFS' }\"\n    at c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\test-2.spec.ts:31:14",
-                    "location": {
-                      "file": "c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\test-2.spec.ts",
-                      "column": 14,
-                      "line": 31
-                    },
-                    "snippet": "  29 |   await page.getByPlaceholder('Search').click();\n  30 |   await page.getByPlaceholder('Search').fill('Volks');\n> 31 |   await page.waitForSelector(\"getByRole('heading', { name: 'Volkswagen PreOFS' }\")\n     |              ^\n  32 |   await page.locator('.add-company > .pa-0').first().click();\n  33 |   await page.getByPlaceholder('Search').click();\n  34 |   await page.getByPlaceholder('Search').fill('Tesla');"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\test-2.spec.ts",
-                        "column": 14,
-                        "line": 31
-                      },
-                      "message": "Error: page.waitForSelector: Unsupported token \"{\" while parsing selector \"getByRole('heading', { name: 'Volkswagen PreOFS' }\"\n\n  29 |   await page.getByPlaceholder('Search').click();\n  30 |   await page.getByPlaceholder('Search').fill('Volks');\n> 31 |   await page.waitForSelector(\"getByRole('heading', { name: 'Volkswagen PreOFS' }\")\n     |              ^\n  32 |   await page.locator('.add-company > .pa-0').first().click();\n  33 |   await page.getByPlaceholder('Search').click();\n  34 |   await page.getByPlaceholder('Search').fill('Tesla');\n\n\u001b[2m    at c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\test-2.spec.ts:31:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-10-08T00:30:12.213Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "c:\\Users\\123\\VS Projects\\PLAYWRIGHT_VSExtension\\tests\\test-2.spec.ts",
-                    "column": 14,
-                    "line": 31
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "b0639a757ff76b21cdba-ef10cfa7ec7e1428db71",
-          "file": "test-2.spec.ts",
-          "line": 3,
-          "column": 5
         }
       ]
     }
