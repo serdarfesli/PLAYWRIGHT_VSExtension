@@ -23,7 +23,7 @@ test.describe('verify link are redirecting correct pages', () => {
             const publicOfs= new PublicOFS_HomePage(page);
             await page.goto('https://dev.ofs-directory.bidout.app/')
         await publicOfs.pricingLink.click()
-        await expect(page).toHaveTitle('Pricing - BidOu')
+        await expect(page).toHaveTitle('Pricing - BidOut')
         await expect(page).toHaveURL('https://bidout.app/pricing/')
         
         })
