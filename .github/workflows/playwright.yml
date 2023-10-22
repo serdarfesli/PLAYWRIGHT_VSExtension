@@ -50,4 +50,4 @@ jobs:
       with:
         PERSONAL_TOKEN: ${{ secrets.PLAYWRIGHT_SECRET }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: allure-history
+        PUBLISH_DIR: allure-history 
