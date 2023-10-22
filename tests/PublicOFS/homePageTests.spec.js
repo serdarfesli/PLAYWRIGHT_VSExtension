@@ -16,7 +16,7 @@ test.describe('verify link are redirecting correct pages', () => {
             await page.goto('https://dev.ofs-directory.bidout.app/')
         await publicOfs.getStartedLink.click()
         await expect(page).toHaveTitle('Get Started - BidOut')
-        await expect(page).toHaveURL('https://dashboard.bidout.app/get-started')
+        await  expect(page).toHaveURL('https://dashboard.bidout.app/get-started')
         
         })
         test('pricing',  async ({page})=> {
